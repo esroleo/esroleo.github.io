@@ -1,0 +1,61 @@
+/* Remove default browser-enforced styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    padding: 20px 35px;
+    background-color: #383838;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+header h1 {
+
+    color: whitesmoke;
+ 
+}
+
+body {
+    background-color: whitesmoke;
+    
+}
+
+h2 {
+    padding: 20px 0 20px 0px;
+}
+
+ul li {
+
+    font-family: "Times New Roman", Times, serif;
+    font-size: 17px;
+
+}
+
+
+.container {
+
+    padding: 20px 35px;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+
+#main-bio p {
+
+    padding: 20px 50px;
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    float: right;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+}
