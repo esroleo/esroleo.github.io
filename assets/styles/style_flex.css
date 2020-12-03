@@ -6,6 +6,7 @@
 }
 
 
+
 header {
     padding: 20px 35px;
     background-color: #383838;
@@ -37,9 +38,29 @@ ul li {
 
 }
 
+footer {
+    padding: 20px 35px;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    background-color: #383838;
+    color: whitesmoke;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    
+
+}
+
+footer ul li a{
+    color: whitesmoke;
+}
+
 
 .container {
 
+    height: 600px;
     padding: 20px 35px;
     background-color: whitesmoke;
     display: flex;
@@ -58,4 +79,9 @@ ul li {
     float: right;
     font-family: "Times New Roman", Times, serif;
     font-size: 20px;
+}
+
+#footer-info {
+    height: 0px;
+
 }
