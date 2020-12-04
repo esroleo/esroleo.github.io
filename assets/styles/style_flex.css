@@ -5,83 +5,139 @@
     box-sizing: border-box;
 }
 
+html {
+  background-color: dimgray;
+}
+
+html, body {
+  /* IE 10-11 didn't like using min-height */
+  height: 100%;
+
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      
+}
 
 
-header {
-    padding: 20px 35px;
-    background-color: #383838;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+.header {
+  /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: auto; /*“look at my width or height property” (which was temporarily done by the main-size keyword until deprecated).*/
+  /*The content keyword means “size it based on the item’s content” – this keyword isn’t well supported yet, so it’s hard to test and harder to know what its brethren max-content, min-content, and fit-content do.*/
+  padding: 20px;
+  background-color: dimgray;
+}
+
+.header h1 {
+    text-align: center;
+    color: linen;
+}
+
+.main-body {
+    /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto; /*“look at my width or height property” (which was temporarily done by the main-size keyword until deprecated).*/
+    /*The content keyword means “size it based on the item’s content” – this keyword isn’t well supported yet, so it’s hard to test and harder to know what its brethren max-content, min-content, and fit-content do.*/
+    padding: 20px;
+    align-self: center;
+    width: 80%;
+
+   
+  }
+
+  .main-body h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: linen;
+}
+  
+
+  .main-body p {
+      font-size: 20px;
+      color: cornsilk;
+  }
+
+.project-headlines{
+    /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto; /*“look at my width or height property” (which was temporarily done by the main-size keyword until deprecated).*/
+    /*The content keyword means “size it based on the item’s content” – this keyword isn’t well supported yet, so it’s hard to test and harder to know what its brethren max-content, min-content, and fit-content do.*/
+    padding: 20px;
+    align-self: center;
+    width: 80%;
+  
+    
+
+  }
+
+  .project-headlines img {
+    border: 1px solid #ddd; /* Gray border */
+    border-radius: 4px;  /* Rounded border */
+    padding: 5px; /* Some padding */
+    width: 150px; /* Set a small width */
+    margin: 0 30px 15px 0;
+    border-radius: 15%;
+
+  }
+
+  .project-headlines a {
+    text-decoration: none;
+  }
+
+  .project-headlines img:hover {
+    box-shadow: 0 0 2px 1px rgb(0, 186, 248);
+  }
+
+  
+
+
+
+.footer {
+  flex-grow: 0; /*My smallest growth div*/
+  flex-shrink: 0; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size.*/
+  padding: 20px 10px 10px 10px;
+  align-self: center;
+  color: linen;
+  
+
+}
+
+.footer h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
 }
 
-header h1 {
-
-    color: whitesmoke;
- 
+.footer ul {
+    list-style-position: inside;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-body {
-    background-color: whitesmoke;
-    
+/*Remove blue and all decorations from footer a links"*/
+
+.footer span {
+  color: linen;
 }
 
-h2 {
-    padding: 20px 0 20px 0px;
+.footer a:link {
+  text-decoration: none;
 }
 
-ul li {
-
-    font-family: "Times New Roman", Times, serif;
-    font-size: 17px;
-
+.footer a:visited {
+  text-decoration: none;
 }
 
-footer {
-    padding: 20px 35px;
-    background-color: whitesmoke;
-    display: flex;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    background-color: #383838;
-    color: whitesmoke;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    
-
+.footer a:hover {
+  text-decoration: underline;
 }
 
-footer ul li a{
-    color: whitesmoke;
-}
-
-
-.container {
-
-    height: 600px;
-    padding: 20px 35px;
-    background-color: whitesmoke;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-
-}
-
-
-#main-bio p {
-
-    padding: 20px 50px;
-    display: flex;
-    justify-content: left;
-    flex-wrap: wrap;
-    float: right;
-    font-family: "Times New Roman", Times, serif;
-    font-size: 20px;
-}
-
-#footer-info {
-    height: 0px;
-
+.footer a:active {
+  text-decoration: underline;
 }
